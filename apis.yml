@@ -1,16 +1,13 @@
 aid: regular-expressions
 name: Regular Expressions
-description: A sequence of characters that define a search pattern, commonly used
-  for string matching, validation, and text manipulation in programming and data processing.
-  It supports the full software development lifecycle from design through deployment
-  and maintenance.
+description: A sequence of characters that define a search pattern, commonly used for string matching, validation, and text manipulation in programming and data processing. It supports the full software development lifecycle from design through deployment and maintenance.
 type: Index
 url: https://raw.githubusercontent.com/api-evangelist/regular-expressions/refs/heads/main/apis.yml
 tags:
-- Text Processing
-- Pattern Matching
-- String Manipulation
-- Programming
+  - Pattern Matching
+  - Programming
+  - String Manipulation
+  - Text Processing
 created: '2025-01-01'
 modified: '2026-03-16'
 specificationVersion: '0.19'
