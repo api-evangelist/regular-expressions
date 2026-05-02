@@ -1,0 +1,112 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://api-evangelist.github.io/regular-expressions/json-schema/regular-expressions-pattern-schema.json",
+  "title": "Regular Expression Pattern",
+  "description": "Schema for describing a regular expression pattern with its metadata, use case, and supported flavors.",
+  "type": "object",
+  "required": ["pattern"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier for the pattern."
+    },
+    "name": {
+      "type": "string",
+      "description": "Human-readable name for the pattern."
+    },
+    "description": {
+      "type": "string",
+      "description": "What the pattern matches and its intended use."
+    },
+    "pattern": {
+      "type": "string",
+      "description": "The regular expression pattern string."
+    },
+    "flags": {
+      "type": "string",
+      "description": "Default flags for the pattern (e.g., 'gi', 'im')."
+    },
+    "flavor": {
+      "type": "string",
+      "description": "The regex flavor this pattern is written for.",
+      "enum": ["PCRE", "PCRE2", "JavaScript", "Python", "Java", ".NET", "Ruby", "Go", "POSIX ERE", "POSIX BRE"]
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Categorization tags for the pattern."
+    },
+    "useCase": {
+      "type": "string",
+      "description": "Primary use case for this pattern (e.g., 'Email Validation', 'URL Parsing', 'Date Extraction')."
+    },
+    "examples": {
+      "type": "object",
+      "description": "Example strings that demonstrate the pattern.",
+      "properties": {
+        "matching": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Strings that match the pattern."
+        },
+        "nonMatching": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Strings that do not match the pattern."
+        }
+      }
+    },
+    "groups": {
+      "type": "array",
+      "description": "Description of capturing groups in the pattern.",
+      "items": {
+        "type": "object",
+        "required": ["index"],
+        "properties": {
+          "index": {
+            "type": "integer",
+            "description": "Group number (1-based)."
+          },
+          "name": {
+            "type": "string",
+            "description": "Named group identifier, if using named captures."
+          },
+          "description": {
+            "type": "string",
+            "description": "What this group captures."
+          }
+        }
+      }
+    },
+    "performance": {
+      "type": "object",
+      "description": "Performance characteristics and potential issues.",
+      "properties": {
+        "backtracking": {
+          "type": "boolean",
+          "description": "Whether this pattern uses significant backtracking."
+        },
+        "catastrophicBacktracking": {
+          "type": "boolean",
+          "description": "Whether this pattern could exhibit catastrophic backtracking (ReDoS vulnerability)."
+        },
+        "notes": {
+          "type": "string",
+          "description": "Performance notes and recommendations."
+        }
+      }
+    },
+    "created": {
+      "type": "string",
+      "format": "date",
+      "description": "Date the pattern was created."
+    },
+    "modified": {
+      "type": "string",
+      "format": "date",
+      "description": "Date the pattern was last modified."
+    }
+  }
+}

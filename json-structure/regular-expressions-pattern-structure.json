@@ -1,0 +1,48 @@
+{
+  "name": "Regular Expression Pattern",
+  "description": "Structure documentation for a regular expression pattern with metadata and usage examples.",
+  "fields": [
+    { "name": "id", "type": "string", "required": false, "description": "Unique identifier for the pattern." },
+    { "name": "name", "type": "string", "required": false, "description": "Human-readable name for the pattern." },
+    { "name": "description", "type": "string", "required": false, "description": "What the pattern matches and its intended use." },
+    { "name": "pattern", "type": "string", "required": true, "description": "The regular expression pattern string." },
+    { "name": "flags", "type": "string", "required": false, "description": "Default flags (e.g., 'gi', 'im')." },
+    { "name": "flavor", "type": "string", "required": false, "description": "Regex flavor (PCRE, JavaScript, Python, .NET, etc.)." },
+    { "name": "useCase", "type": "string", "required": false, "description": "Primary use case for the pattern." },
+    { "name": "tags", "type": "array[string]", "required": false, "description": "Categorization tags." },
+    {
+      "name": "examples",
+      "type": "object",
+      "required": false,
+      "description": "Example strings demonstrating the pattern.",
+      "fields": [
+        { "name": "matching", "type": "array[string]", "required": false, "description": "Strings that match the pattern." },
+        { "name": "nonMatching", "type": "array[string]", "required": false, "description": "Strings that do not match." }
+      ]
+    },
+    {
+      "name": "groups",
+      "type": "array[object]",
+      "required": false,
+      "description": "Capturing groups in the pattern.",
+      "fields": [
+        { "name": "index", "type": "integer", "required": true, "description": "Group number (1-based)." },
+        { "name": "name", "type": "string", "required": false, "description": "Named group identifier." },
+        { "name": "description", "type": "string", "required": false, "description": "What the group captures." }
+      ]
+    },
+    {
+      "name": "performance",
+      "type": "object",
+      "required": false,
+      "description": "Performance characteristics.",
+      "fields": [
+        { "name": "backtracking", "type": "boolean", "required": false, "description": "Whether significant backtracking is used." },
+        { "name": "catastrophicBacktracking", "type": "boolean", "required": false, "description": "ReDoS vulnerability risk." },
+        { "name": "notes", "type": "string", "required": false, "description": "Performance notes." }
+      ]
+    },
+    { "name": "created", "type": "date", "required": false, "description": "Date created." },
+    { "name": "modified", "type": "date", "required": false, "description": "Date last modified." }
+  ]
+}

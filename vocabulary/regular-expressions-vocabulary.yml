@@ -1,0 +1,133 @@
+vocabulary:
+  name: Regular Expressions Vocabulary
+  description: Terminology, patterns, and concepts used in regular expression syntax, tooling, and programming language implementations.
+  version: '1.0'
+  created: '2026-05-02'
+  modified: '2026-05-02'
+  tags:
+    - Pattern Matching
+    - Programming
+    - String Manipulation
+    - Text Processing
+
+  terms:
+
+    - term: Anchor
+      definition: A regex token that matches a position rather than a character. Common anchors include ^ (start of string), $ (end of string), \b (word boundary), and \B (non-word boundary).
+      tags:
+        - Pattern Matching
+        - Syntax
+
+    - term: Alternation
+      definition: The pipe character | in a regex that allows matching one of several alternatives, functioning as a logical OR. Example - cat|dog matches either "cat" or "dog".
+      tags:
+        - Pattern Matching
+        - Syntax
+
+    - term: Backreference
+      definition: A reference within a regex to a previously captured group, allowing the engine to match the same text again. Denoted as \1, \2, etc. for numbered groups or \k<name> for named groups.
+      tags:
+        - Capturing
+        - Syntax
+
+    - term: Capturing Group
+      definition: A pair of parentheses in a regex that captures the matched text for later use, either in a backreference within the regex or extraction from the match result. Denoted by (...).
+      tags:
+        - Capturing
+        - Syntax
+
+    - term: Character Class
+      definition: A set of characters enclosed in square brackets [...] that matches any single character in the set. Supports ranges (a-z), negation ([^...]), and shorthand classes like \d, \w, and \s.
+      tags:
+        - Pattern Matching
+        - Syntax
+
+    - term: Flags / Modifiers
+      definition: Options that change how a regex engine processes a pattern. Common flags include i (case-insensitive), g (global, find all matches), m (multiline), and s (dotall, dot matches newline).
+      tags:
+        - Configuration
+        - Syntax
+
+    - term: Greedy Quantifier
+      definition: A quantifier that matches as many characters as possible while still allowing the overall pattern to succeed. The default behavior of *, +, ?, and {n,m}. Use a trailing ? to make lazy.
+      tags:
+        - Matching Behavior
+        - Quantifiers
+
+    - term: Group
+      definition: A subexpression enclosed in parentheses that can be quantified, captured, or used for alternation. Includes capturing groups (...), non-capturing groups (?:...), and named groups (?<name>...).
+      tags:
+        - Capturing
+        - Syntax
+
+    - term: Lazy Quantifier
+      definition: A quantifier that matches as few characters as possible while still allowing the overall pattern to succeed. Created by appending ? to a greedy quantifier, such as *?, +?, or ??.
+      tags:
+        - Matching Behavior
+        - Quantifiers
+
+    - term: Lookahead
+      definition: A zero-width assertion that succeeds if the pattern inside matches at the current position without consuming characters. Positive lookahead - (?=...), negative lookahead - (?!...).
+      tags:
+        - Assertions
+        - Syntax
+
+    - term: Lookbehind
+      definition: A zero-width assertion that succeeds if the pattern inside matches immediately before the current position. Positive lookbehind - (?<=...), negative lookbehind - (?<!...).
+      tags:
+        - Assertions
+        - Syntax
+
+    - term: Named Group
+      definition: A capturing group with an explicit name for easier reference. Syntax varies by flavor - (?<name>...) in PCRE/.NET/Python, (?P<name>...) in Python.
+      tags:
+        - Capturing
+        - Syntax
+
+    - term: Non-Capturing Group
+      definition: A group (?:...) that groups subexpressions for quantification or alternation without capturing the match for back-reference or extraction.
+      tags:
+        - Capturing
+        - Syntax
+
+    - term: PCRE
+      definition: Perl Compatible Regular Expressions - a widely-used regular expression library written in ANSI C that is the underlying regex engine for PHP, R, Delphi, and many other languages and tools.
+      tags:
+        - Libraries
+        - Standards
+
+    - term: Quantifier
+      definition: A token that specifies how many times the preceding element must match. Common quantifiers - * (zero or more), + (one or more), ? (zero or one), {n} (exactly n), {n,m} (between n and m).
+      tags:
+        - Quantifiers
+        - Syntax
+
+    - term: Regex Engine
+      definition: The software component that parses and executes a regular expression against a string. Different engines (NFA, DFA, POSIX) have different performance characteristics and feature support.
+      tags:
+        - Implementation
+        - Processing
+
+    - term: Regex Flavor
+      definition: A specific variant of regular expression syntax with its own set of supported features, syntax differences, and behavior. Major flavors include PCRE, POSIX ERE, .NET, Java, JavaScript, Python.
+      tags:
+        - Compatibility
+        - Standards
+
+    - term: Shorthand Character Class
+      definition: Predefined character class abbreviations - \d (digits 0-9), \D (non-digit), \w (word characters a-zA-Z0-9_), \W (non-word), \s (whitespace), \S (non-whitespace).
+      tags:
+        - Pattern Matching
+        - Syntax
+
+    - term: Unicode Property
+      definition: A regex feature allowing matching of characters by Unicode category, script, or block. Syntax varies by flavor - \p{Letter} or \p{L} for any Unicode letter across all scripts.
+      tags:
+        - Unicode
+        - Syntax
+
+    - term: Zero-Width Assertion
+      definition: A regex construct that matches a position without consuming characters. Includes anchors (^, $, \b), lookaheads ((?=...), (?!...)), and lookbehinds ((?<=...), (?<!...)).
+      tags:
+        - Assertions
+        - Matching Behavior

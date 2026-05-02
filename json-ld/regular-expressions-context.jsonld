@@ -1,0 +1,88 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "schema": "https://schema.org/",
+    "regex": "https://api-evangelist.github.io/regular-expressions/vocab#",
+    "name": "schema:name",
+    "description": "schema:description",
+    "url": "schema:url",
+    "version": "schema:version",
+    "tags": "schema:keywords",
+    "Pattern": {
+      "@id": "regex:Pattern",
+      "@type": "schema:Thing",
+      "@context": {
+        "syntax": "regex:syntax",
+        "flags": "regex:flags",
+        "flavor": "regex:flavor",
+        "example": "schema:example"
+      }
+    },
+    "RegexEngine": {
+      "@id": "regex:RegexEngine",
+      "@type": "schema:SoftwareApplication",
+      "@context": {
+        "language": "schema:programmingLanguage",
+        "flavor": "regex:flavor",
+        "unicode": "regex:unicodeSupport",
+        "backtracking": "regex:backtracking"
+      }
+    },
+    "RegexPattern": {
+      "@id": "regex:RegexPattern",
+      "@type": "schema:CreativeWork",
+      "@context": {
+        "pattern": "regex:patternString",
+        "useCase": "regex:useCase",
+        "flags": "regex:flags",
+        "flavor": "regex:flavor"
+      }
+    },
+    "CapturingGroup": {
+      "@id": "regex:CapturingGroup",
+      "@type": "regex:Pattern",
+      "@context": {
+        "index": "regex:groupIndex",
+        "name": "regex:groupName"
+      }
+    },
+    "Quantifier": {
+      "@id": "regex:Quantifier",
+      "@type": "regex:Pattern",
+      "@context": {
+        "greedy": "regex:greedy",
+        "min": "regex:minOccurrence",
+        "max": "regex:maxOccurrence"
+      }
+    },
+    "CharacterClass": {
+      "@id": "regex:CharacterClass",
+      "@type": "regex:Pattern",
+      "@context": {
+        "negated": "regex:negated",
+        "range": "regex:characterRange"
+      }
+    },
+    "Anchor": {
+      "@id": "regex:Anchor",
+      "@type": "regex:Pattern",
+      "@context": {
+        "position": "regex:anchorPosition"
+      }
+    },
+    "Lookahead": {
+      "@id": "regex:Lookahead",
+      "@type": "regex:Pattern",
+      "@context": {
+        "positive": "regex:positive"
+      }
+    },
+    "Lookbehind": {
+      "@id": "regex:Lookbehind",
+      "@type": "regex:Pattern",
+      "@context": {
+        "positive": "regex:positive"
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "email-validation-basic",
+  "name": "Email Address Validation",
+  "description": "Validates that a string conforms to the basic structure of an email address with a local part, @ symbol, domain name, and TLD.",
+  "pattern": "^[a-zA-Z0-9._%+\\-]+@[a-zA-Z0-9.\\-]+\\.[a-zA-Z]{2,}$",
+  "flags": "i",
+  "flavor": "PCRE",
+  "useCase": "Email Validation",
+  "tags": ["Email", "Validation", "Web Forms"],
+  "examples": {
+    "matching": [
+      "user@example.com",
+      "firstname.lastname@company.org",
+      "user+tag@subdomain.example.co.uk",
+      "user123@domain.io"
+    ],
+    "nonMatching": [
+      "not-an-email",
+      "@missing-local.com",
+      "missing-domain@",
+      "missing.dot@comtld",
+      "spaces in@email.com"
+    ]
+  },
+  "groups": [],
+  "performance": {
+    "backtracking": false,
+    "catastrophicBacktracking": false,
+    "notes": "Simple linear pattern with no catastrophic backtracking risk. Suitable for high-volume validation."
+  },
+  "created": "2026-05-02",
+  "modified": "2026-05-02"
+}
