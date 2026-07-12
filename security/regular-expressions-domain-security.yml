@@ -1,0 +1,27 @@
+generated: '2026-07-11'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: www.regular-expressions.info
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep 29 17:22:44 2026 GMT
+  hsts: true
+  hsts_max_age: 31536000
+- host: regex101.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep 23 23:35:38 2026 GMT
+  hsts: false
+domains:
+- domain: regular-expressions.info
+  dnssec: false
+  caa:
+  - 0 issue "letsencrypt.org"
+  spf: true
+  dmarc: false
+- domain: regex101.com
+  dnssec: false
+  caa: []
+  spf: false
+  dmarc: false
