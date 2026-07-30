@@ -1,4 +1,16 @@
 aid: regular-expressions
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/regular-expressions.png
 name: Regular Expressions
 description: A sequence of characters that define a search pattern, commonly used for string matching, validation, and text manipulation across programming languages and data processing pipelines. Regular expressions are supported natively in virtually every programming language and are foundational to text processing, log analysis, data validation, and search tooling.
 type: Index
