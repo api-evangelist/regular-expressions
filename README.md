@@ -66,75 +66,114 @@
 
 A sequence of characters that define a search pattern, commonly used for string matching, validation, and text manipulation across programming languages and data processing pipelines. Regular expressions are supported natively in virtually every programming language and are foundational to text processing, log analysis, data validation, and search tooling.
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/regular-expressions/refs/heads/main/apis.yml)
+**Areas:** Pattern Matching · Programming · String Manipulation · Text Processing · Validation · Search · Parsing
 
-## Scope
+## Regular Expressions on APIs.io
 
-- **Type:** Index
-- **Position:** Consuming
-- **Access:** 3rd-Party
+Everything profiled for Regular Expressions is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/regular-expressions/](https://apis.io/providers/regular-expressions/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### Published properties
 
-- Pattern Matching
-- Parsing
-- Programming
-- Search
-- String Manipulation
-- Text Processing
-- Validation
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## Timestamps
+#### JSON Schema (1)
 
-- **Created:** 2025-01-01
-- **Modified:** 2026-05-02
+The data models the API reads and writes.
 
-## Resources
+- [Regular Expression Pattern](https://apis.io/schemas/regular-expressions/regular-expressions-pattern/)
 
-| Name | Type | URL |
-|------|------|-----|
-| Regular-Expressions.info | Website | https://www.regular-expressions.info/ |
-| Regex101 - Online Regex Tester and Debugger | Website | https://regex101.com/ |
-| Python re Module Documentation | Documentation | https://docs.python.org/3/library/re.html |
-| MDN JavaScript Regular Expressions Guide | Documentation | https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions |
-| PCRE - Perl Compatible Regular Expressions | Documentation | https://www.pcre.org/ |
-| Regular Expression Library - Community Pattern Repository | Documentation | https://regexlib.com/ |
-| Regular Expression - Wikipedia | Documentation | https://en.wikipedia.org/wiki/Regular_expression |
+#### JSON Structure (1)
 
-## Artifacts
+Data models expressed in JSON Structure.
 
-### JSON Schema
+- [Regular Expressions Pattern Structure](https://apis.io/json-structure/regular-expressions/regular-expressions-pattern-structure/)
 
-| File | Description |
-|------|-------------|
-| [regular-expressions-pattern-schema.json](json-schema/regular-expressions-pattern-schema.json) | Schema for describing a regex pattern with metadata, examples, and performance characteristics |
+#### JSON-LD (1)
 
-### JSON Structure
+Linked-data contexts for the provider's vocabulary.
 
-| File | Description |
-|------|-------------|
-| [regular-expressions-pattern-structure.json](json-structure/regular-expressions-pattern-structure.json) | Field-level structure documentation for regular expression patterns |
+- [Regular Expressions Context](https://apis.io/jsonld/regular-expressions/regular-expressions-context/)
 
-### JSON-LD
+#### Vocabulary (1)
 
-| File | Description |
-|------|-------------|
-| [regular-expressions-context.jsonld](json-ld/regular-expressions-context.jsonld) | JSON-LD context mapping regex concepts to schema.org and custom vocabulary |
+The provider's domain terms, defined.
 
-### Examples
+- [Regular Expressions Vocabulary](https://apis.io/vocabularies/regular-expressions/regular-expressions-vocabulary/)
 
-| File | Description |
-|------|-------------|
-| [regular-expressions-email-pattern-example.json](examples/regular-expressions-email-pattern-example.json) | Email address validation regex pattern with matching and non-matching examples |
+#### Examples (1)
 
-### Vocabulary
+Example requests and responses.
 
-| File | Description |
-|------|-------------|
-| [regular-expressions-vocabulary.yml](vocabulary/regular-expressions-vocabulary.yml) | Glossary of regular expression syntax, engine, and concept terminology |
+- [Regular Expressions Email Pattern Example](https://apis.io/examples/regular-expressions/regular-expressions-email-pattern-example/)
 
-## Maintainers
+#### Governance rules (1)
 
-**FN:** Kin Lane
+Spectral rulesets for the provider's contracts.
 
-**Email:** kin@apievangelist.com
+- [Regular Expressions — jsonschema rules](https://apis.io/rules/regular-expressions/regular-expressions-jsonschema-spectral-rules/)
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Regular Expressions Domain Security](https://apis.io/security/regular-expressions/regular-expressions-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.regular-expressions.info/)
+- [Documentation](https://docs.python.org/3/library/re.html)
+
+## API Evangelist rating
+
+**Kin Score 13.9** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 17.2 |
+| Contract governance | 23.5 |
+| Operational transparency | 5.3 |
+| Developer ergonomics | 9.5 |
+| Access clarity | 0.0 |
+
+**Agent readiness 1.3** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | documented (partial credit) |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 10.8** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/regular-expressions/](https://apis.io/providers/regular-expressions/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Regular Expressions: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/regular-expressions/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
